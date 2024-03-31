@@ -1,0 +1,282 @@
+:root {
+  --pink: #d1aecd;
+  --abu: #666;
+}
+
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--pink);
+  color: #010101;
+}
+
+/* header {
+  background-color: #333;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 32px;
+} */
+
+/*  navbar*/
+.navbar {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: #f0ebeb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+
+}
+
+.navbar .navbar-logo {
+  font-size: 0.7rem;
+  color: #7d3c65;
+
+}
+
+.navbar .navbar-logo span {
+  color: var(--pink);
+}
+
+.navbar .navbar-nav a {
+  display: inline-block;
+  font-size: 0.9rem;
+  margin: 0 1rem;
+  color: #252425;
+
+}
+
+.navbar .navbar-nav a:hover {
+  color: #7d3c65;
+  display: inline-block;
+
+}
+
+.navbar .navbar-nav a::after {
+  content: '';
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #7d3c65;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #252425;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* size queries */
+
+/* dekstop */
+@media (max-width:1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+
+@media (max-width:768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    /* display: none; */
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav .active {
+    right: 0;
+
+  }
+
+  .navbar .navbar-nav a {
+    color: #252425;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+}
+
+
+/* mobile phone */
+@media (max-width:450px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+
+
+/* hero section */
+
+/* .hero {
+  max-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: (image/1.jpg);
+  background-repeat: no-repeat;
+} */
+
+/* home section */
+
+.Home {
+  background-color: var(--pink);
+  padding: 20px;
+  color: #7d3c65;
+  text-align: center;
+
+}
+
+.about {
+  background-color: var(--pink);
+  padding: 20px;
+  color: #7d3c65;
+  text-align: center;
+}
+
+.skill {
+  background-color: var(--pink);
+  padding: 20px;
+  color: #7d3c65;
+  text-align: center;
+}
+
+.whyme {
+  background-color: var(--pink);
+  padding: 20px;
+  color: #7d3c65;
+  text-align: center;
+}
+
+.testimony {
+  background-color: var(--pink);
+  padding: 20px;
+  color: #7d3c65;
+  text-align: center;
+}
+
+.Portofolio {
+  background-color: var(--pink);
+  padding: 20px;
+  color: #7d3c65;
+  text-align: center;
+}
+
+.contact {
+  background-color: var(--pink);
+  padding: 20px;
+  color: #7d3c65;
+  text-align: center;
+}
+
+.footer {
+  /* background-color: #333;
+  padding: 20px;
+  color: #fff;
+  text-align: center; */
+
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: var(--abu);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+main {
+  padding: 30px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li strong {
+  display: inline-block;
+  width: 30px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+li span {
+  display: inline-block;
+  width: calc(100% - 40px);
+}
+
+progress {
+  display: inline-block;
+  width: calc(100% - 40px);
+  height: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ddd;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #ddd;
+}
+
+progress::-webkit-progress-value {
+  background-color: #4caf50;
+}
