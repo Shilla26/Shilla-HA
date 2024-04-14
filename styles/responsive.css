@@ -1,0 +1,132 @@
+:root {
+  --background: #d1aecd;
+  --header: #D9D9D9;
+  --footer: #CAB9B9;
+  --textBesar: #5D2057;
+  --textKecil: #1f1f1f;
+  --textHighlit: #996A67;
+  --blockBesar: #6B577A;
+  --blockKecil: #D1CBD0;
+}
+
+@media screen and (max-widht: 1000px) {
+  p {
+    font-size: .9rem;
+    line-height: 1.8rem;
+  }
+
+  .grid-3 {
+    gap: 1rem;
+  }
+
+}
+
+@media screen and (max-widht: 825px) {
+
+  /* burger */
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .toggle-burger .line-1 {
+    transform: rotate(-45deg) translate(-5px, 7px);
+  }
+
+  .toggle-burger .line-2 {
+    opacity: 0;
+    transform: rotate(-45deg) translate(-5px, 7px);
+  }
+
+  .toggle-burger .line-3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+
+    /* navigation */
+    nav {
+      position: fixed;
+      width: 50%;
+      right: 0;
+      top: 0;
+      height: 100vh;
+      flex-direction: column;
+      background: var(--footer);
+      border-left: 1px solid var(--textBesar);
+      z-index: 999;
+      transform: translateX(100%);
+      transition: .2s ease-in-out;
+    }
+
+    nav ul {
+      height: 100vh;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .nav-active {
+      transform: translateX(0);
+      padding: 4rem 0;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      margin: 0.6rem 0 2.5rem;
+    }
+
+    .pre-title {
+      font-size: 0.8rem;
+    }
+
+    #hero {
+      grid-template-columns: 1fr;
+      height: fit-content;
+    }
+
+    .hero-right {
+      order: -1;
+    }
+
+    .hero-right img {
+      width: 70%;
+    }
+
+    .hero-left {
+      text-align: center;
+      padding-bottom: 5rem;
+
+    }
+
+    .hero-left .pre-title {
+      margin: 0 auto;
+    }
+
+    .hero-name {
+      font-size: 2.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* skilss section */
+    .skills-grid {
+      gap: 1rem;
+    }
+
+    /* skilss section end */
+
+    /* footer section */
+    footer {
+      padding: 2rem 0;
+    }
+
+    /* footer section end*/
+
+  }
+}
+
+
+@media screen and (max-widht: 640px) {
+
+  /* Titles */
+  .section-title {
+    font-size: 0.7rem;
+  }
+}
